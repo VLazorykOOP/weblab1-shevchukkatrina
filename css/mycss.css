@@ -1,4 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 18px;
+}
+
+.header {
+  background-color: #ddbbf0; 
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header nav a:hover {
+  color: #2d0150; 
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left; 
+}
+
+.containernews{
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   border: 1px solid #ddd;
+    margin: 20px 0;
+    border-radius: 8px;}
+
+.container img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px; 
+}
+
+.text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer {
+  background-color: #b3b3b3; 
+}
+
+nav a {
+  margin: 12px;
+  padding: 12px 12px;
+  border-bottom: 1px solid #555;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 h1 {
-  margin: 0; 
-  size: 12; 
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.book h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.book p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.book button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book button:hover {
+  background-color: #555;
 }
