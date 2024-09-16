@@ -7,15 +7,22 @@ body {
 }
 
 .header {
-  background-color: #ddbbf0; 
+  background-color: #a75af0;
   width: 100%;
   padding: 20px;
   font-weight: bold;
   color: #ffffff;
+  text-align: center;
+}
+
+.header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
 }
 
 .header nav a:hover {
-  color: #2d0150; 
+  color: #2d0150;
   font-weight: bold;
 }
 
@@ -23,21 +30,31 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  text-align: left; 
+  text-align: left;
 }
 
-.containernews{
-   display: flex;
-   align-items: center;
-   padding: 20px;
-   border: 1px solid #ddd;
-    margin: 20px 0;
-    border-radius: 8px;}
-
 .container img {
+  display: block; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  height: auto; 
+}
+
+.containernews {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.containernews img {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px; 
+  margin-right: 20px;
+  border-radius: 8px;
 }
 
 .text {
@@ -45,72 +62,158 @@ body {
   vertical-align: top;
 }
 
-.footer {
-  background-color: #b3b3b3; 
+h2, h4, h5, h6 {
+  margin: 20px 0;
+  color: #333;
 }
 
-nav a {
-  margin: 12px;
-  padding: 12px 12px;
-  border-bottom: 1px solid #555;
+ul {
+  padding-left: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit
+footer {
+  background-color: #a8a7a9;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .contact-info {
+  max-width: 600px;
+  text-align: left;
+}
+
+footer .contact-info address {
+  margin-bottom: 10px;
+}
+
+footer .contact-info small {
+  display: block;
+  margin-bottom: 5px;
+}
+
+footer .contact-info em {
+  color: #e1dbdb;
+}
+
+footer .footer-credit {
+  text-align: center;
 }
 
 a:hover {
-  cursor: pointer;
+  text-decoration: underline;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+.containernews img::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: #f4f4f4;
 }
 
-.book-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.book {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px;
-  width: calc(33.333% - 20px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.book img {
+img {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin-bottom: 15px;
+  border-radius: 4px;
 }
 
-.book h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 10px;
+  margin: 10px 0;
+  font-style: italic;
 }
 
-.book p {
-  font-size: 1em;
-  margin-bottom: 10px;
+[title] {
+  font-weight: bold;
 }
 
-.book button {
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+[lang="ua"] {
+  font-style: italic;
 }
 
-.book button:hover {
-  background-color: #555;
+[id="contact"] {
+  color: #eeeaea;
+}
+
+a[href$=".pdf"] {
+  color: #ffffff;
+}
+
+.parent :first-child {
+  margin-top: 0;
+}
+
+.parent :last-child {
+  margin-bottom: 0;
+}
+
+.parent p:first-of-type {
+  font-weight: bold;
+}
+
+input:checked {
+  background-color: #a75af0;
+}
+
+input:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+input:invalid {
+  border: 2px solid #363535;
+}
+
+h2:hover {
+  color: #7911a2;
+}
+
+p::first-line {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.element::before {
+  content: "Note: ";
+  color: #7911a2;
+}
+
+.important-rule {
+  color: rgb(66, 2, 75) !important;
+}
+
+.box {
+  margin-left: 20px;
+  margin-right: 10%;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-left-width: thin;
+  border-width: thin;
+  border-right-width: 2px;
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: #a75af0;
+  border-color: #ddd;
+  border-top-style: double;
+  border-style: dashed;
+  border-left-style: solid;
+}
+
+.float-element {
+  display: inline;
+  position: relative;
+  float: left;
+  clear: none;
+  z-index: 10;
+}
+
+h1 + p {
+  color: red;
 }
