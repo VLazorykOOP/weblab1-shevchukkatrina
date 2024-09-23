@@ -64,7 +64,7 @@ body {
 
 h2, h4, h5, h6 {
   margin: 20px 0;
-  color: #333;
+  color: #000000;
 }
 
 ul {
@@ -75,6 +75,7 @@ footer {
   background-color: #a8a7a9;
   padding: 20px;
   border-top: 1px solid #ddd;
+  width: 100%;
 }
 
 footer .container {
@@ -174,12 +175,12 @@ input:invalid {
 h2:hover {
   color: #7911a2;
 }
-
+/*
 p::first-line {
   font-size: 1.2em;
   font-weight: bold;
 }
-
+*/
 .element::before {
   content: "Note: ";
   color: #7911a2;
@@ -189,7 +190,7 @@ p::first-line {
   color: rgb(66, 2, 75) !important;
 }
 
-.box {
+/*.box {
   margin-left: 20px;
   margin-right: 10%;
   padding-left: 15px;
@@ -205,7 +206,7 @@ p::first-line {
   border-style: dashed;
   border-left-style: solid;
 }
-
+*/
 .float-element {
   display: inline;
   position: relative;
