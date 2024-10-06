@@ -42,7 +42,7 @@ body {
 
 .containernews {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
   border: 1px solid #ddd;
   margin: 20px 0;
@@ -51,15 +51,13 @@ body {
 }
 
 .containernews img {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   margin-right: 20px;
   border-radius: 8px;
 }
 
 .text {
-  display: inline-block;
-  vertical-align: top;
+  flex: 1;
 }
 
 h2, h4, h5, h6 {
@@ -217,4 +215,8 @@ p::first-line {
 
 h1 + p {
   color: red;
+}
+
+a {
+  color: #2d0150;
 }
