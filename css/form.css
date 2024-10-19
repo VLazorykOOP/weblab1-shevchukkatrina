@@ -89,3 +89,64 @@ progress {
     width: 100%;
     height: 20px;
 }
+/*
+body, h1, label, input, select, textarea, button {
+    font-family: fantasy, Geneva, Calibri, 'Lucida Sans Regular', 'Lucida Sans Unicode', sans-serif;
+    
+    font-weight: bold; 
+    font-size: 18px;
+    font-variant: small-caps;
+    font-style: normal;
+    font-stretch: extra-expanded; 
+}
+
+label {
+    font-stretch: condensed; 
+}
+
+label, input, select, textarea, button {
+    text-indent: 5%; 
+    text-decoration: underline; 
+    text-align: right; 
+    white-space: pre;
+    word-spacing: 5px; 
+}
+
+*/
+@page {
+    size: portrait; 
+    marks: none; 
+}
+
+.break-page {
+    page-break-after: always; 
+    page-break-before: always; 
+}
+
+article {
+    widows: 2; 
+    orphans: 2; 
+}
+
+/*
+@media speech {
+    body {
+        volume: silent; 
+        speak-punctuation: code;
+        speech-rate: fast;
+        pitch: x-low;
+        azimuth: right; 
+        elevation: level; 
+    }
+
+    h1 {
+        speak: spell-out; 
+    }
+
+    .notification {
+        pause-before: 500ms; 
+        pause-after: 200ms;  
+        play-during: url('notification-sound.mp3') mix; 
+    }
+}
+*/
